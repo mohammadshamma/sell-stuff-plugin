@@ -1,0 +1,45 @@
+{
+  "skill_name": "listing-manager",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just sold the Epson scanner for $35. Update everything.",
+      "expected_output": "The inventory tracker is updated with Status=Sold, Sold Price=35, Date Sold=today's date for the Epson scanner item. Notes column is updated with the sale record.",
+      "files": [],
+      "expectations": [
+        "The inventory tracker spreadsheet is modified (not just described)",
+        "The Epson scanner row has Status changed to 'Sold'",
+        "The Sold Price column is set to 35",
+        "The Date Sold column is set to today's date",
+        "Both FB Marketplace and Craigslist columns are updated to 'Sold'",
+        "The Notes column is updated with a record of the sale"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Some of my items have been listed for a while and aren't selling. Can you suggest revised prices?",
+      "expected_output": "A summary of all listed items with days-since-listing calculated, price revision suggestions for items older than 7 days using progressive discount tiers (10-15% at 7-13 days, 20-25% at 14-20 days, 30-40% at 21+ days), and items under 7 days skipped as too fresh.",
+      "files": [],
+      "expectations": [
+        "The inventory tracker is read and all 'Listed' items are identified",
+        "Days since listing is calculated for each item",
+        "Items listed less than 7 days are skipped with explanation",
+        "Items listed 7+ days get a price suggestion with percentage drop shown",
+        "Suggested prices are rounded down to whole dollars",
+        "A clear summary table or list is presented to the user"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Show me what's still listed and what's already sold.",
+      "expected_output": "A status summary showing all items grouped by status (Listed vs Sold), with total asking prices, revenue from sold items, and days-since-listing for active items.",
+      "files": [],
+      "expectations": [
+        "The tracker is read and items are grouped by status",
+        "Listed items show their asking price and days listed",
+        "Sold items show their sold price and date sold",
+        "Totals are shown for both groups"
+      ]
+    }
+  ]
+}

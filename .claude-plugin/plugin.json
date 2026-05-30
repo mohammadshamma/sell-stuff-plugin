@@ -1,0 +1,16 @@
+{
+  "name": "sell-stuff",
+  "version": "0.1.0",
+  "description": "List and manage household items for sale on Facebook Marketplace and Craigslist — write listings, post them, track inventory, sync sold items, and revise stale prices.",
+  "author": {
+    "name": "Mohammad Shamma"
+  },
+  "keywords": [
+    "selling",
+    "marketplace",
+    "craigslist",
+    "facebook-marketplace",
+    "inventory",
+    "listings"
+  ]
+}

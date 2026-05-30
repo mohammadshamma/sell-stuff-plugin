@@ -1,0 +1,23 @@
+{
+  "skill_name": "sell-stuff",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to sell my old IKEA KALLAX shelf unit. It's the 4x4 version in white, pretty good condition but has a small scratch on the side. I'd like to list it for $60. Can you write up a listing and organize things?",
+      "expected_output": "A well-written listing description saved to listings.md with honest mention of the scratch, searchable title including 'IKEA KALLAX', and an inventory folder created. Status should be 'Draft' in the tracker since we're not posting yet.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I have 3 items to sell: a standing desk (Uplift V2, 48 inch, walnut top, minor cable management wear, $250), a Herman Miller Aeron chair (size B, good condition, $400), and a Dell 27 inch monitor (U2722D, like new, $200). Can you set up the inventory and write listings for all three?",
+      "expected_output": "Three separate listing descriptions in listings.md, three numbered inventory folders created, and three rows added to the inventory tracker spreadsheet with Draft status. Listings should mention specific models, conditions, and suggest bundle deals for the office setup.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I just sold that dresser I had listed. The buyer paid $70 for it (I had it listed at $80). Can you update my inventory tracker to reflect the sale?",
+      "expected_output": "The inventory tracker should be updated: status changed to 'Sold', FB Marketplace and Craigslist columns updated, Date Sold filled in with today's date, Sold Price set to $70.",
+      "files": []
+    }
+  ]
+}
