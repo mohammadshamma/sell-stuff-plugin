@@ -1,5 +1,6 @@
 {
   "name": "sell-stuff-marketplace",
+  "description": "Mohammad's personal marketplace for the sell-stuff plugin (sell and manage household items online).",
   "owner": {
     "name": "Mohammad Shamma",
     "email": "mohammadshamma@gmail.com"
