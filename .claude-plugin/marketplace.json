@@ -1,0 +1,14 @@
+{
+  "name": "sell-stuff-marketplace",
+  "owner": {
+    "name": "Mohammad Shamma",
+    "email": "mohammadshamma@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "sell-stuff",
+      "source": "./",
+      "description": "List and manage household items for sale on Facebook Marketplace and Craigslist — write listings, post them, track inventory, sync sold items, and revise stale prices."
+    }
+  ]
+}
